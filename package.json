@@ -8,6 +8,9 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
+  "engines": {
+    "node": "9.3.0"
+  },
   "jest": {
     "globals": {
       "__DEBUG__": false,
@@ -58,11 +61,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kowserk7/37-cookies.git"
+    "url": "git+https://github.com/kowserk7/39-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/kowserk7/37-cookies/issues"
+    "url": "https://github.com/kowserk7/39-frontend/issues"
   },
-  "homepage": "https://github.com/kowserk7/37-cookies#readme",
+  "homepage": "https://github.com/kowserk7/39-frontend#readme",
   "description": ""
 }
