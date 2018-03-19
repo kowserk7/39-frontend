@@ -13,3 +13,6 @@ app.get('*',(request, response) => {
 app.listen(process.env.PORT, () => {
   console.log('__SERVER_UP__', process.env.PORT);
 });
+app.get('/favicon.ico', function(req, res) {
+  res.status(204);
+});
