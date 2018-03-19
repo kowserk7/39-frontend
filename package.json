@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack-dev-server --inline --hot",
+    "bundle": "webpack",
+    "start": "webpack-dev-server --inline --hot",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "heroku-postbuild": "webpack -p --progress"
   },
   "engines": {
     "node": "9.3.0"
@@ -15,7 +16,7 @@
     "globals": {
       "__DEBUG__": false,
       "process.env": {
-        "NODE_ENV": "testing"
+        "NODE_ENV": "production"
       }
     },
     "verbose": true,
@@ -57,6 +58,7 @@
   },
   "dependencies": {
     "eslint-plugin-react": "^7.7.0",
+    "express": "^4.16.2",
     "react-avatar": "^2.5.1"
   },
   "repository": {
